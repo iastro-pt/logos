@@ -6,7 +6,7 @@
   .flexbin:after {
     content: '';
     flex-grow: 999999999;
-    min-width: 300px;
+    min-width: 200px;
     height: 0; }
   .flexbin > * {
     position: relative;
@@ -21,7 +21,7 @@
       min-width: 100%;
       vertical-align: bottom; }
   .flexbin.flexbin-margin {
-    margin: 2.5px; }
+    margin: 5px; }
   @media (max-width: 980px) {
     .flexbin {
       display: flex;
