@@ -23,9 +23,9 @@ jobs:
       run: |
         python create_templates.py
 
-    - name: Push index.html
-      run: |
-        # git checkout --orphan ${GITHUB_REF##*/}
-        git add -f index.html
-        git -c user.name='make-index-action' -c user.email='make-index-action' commit -m "update index.html"
-        git push -q -f https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} ${GITHUB_REF##*/}
+    # - name: Push index.html
+    #   run: |
+    #     # git checkout --orphan ${GITHUB_REF##*/}
+    #     git add -f index.html
+    #     git -c user.name='make-index-action' -c user.email='make-index-action' commit -m "update index.html"
+    #     git push -q -f https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} ${GITHUB_REF##*/}
